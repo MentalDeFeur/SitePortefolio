@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joffrey TERRINE (MentalDeFeur) | Dev, Godot Engine, Game Art & MAO</title>
+  <meta name="description" content="Portfolio de Joffrey Terrine (MentalDeFeur) - Développeur Informatique BTS SIO SLAM, Développeur Jeu Vidéo sur Godot Engine, Illustrateur Gaming/Manga (DeviantArt) & Compositeur MAO (SoundCloud)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;0,600;0,700;1,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Background Grid & Glow Effects -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow glow-cyan" aria-hidden="true"></div>
+  <div class="bg-glow glow-magenta" aria-hidden="true"></div>
+
+  <!-- Top HUD Navigation -->
+  <header class="hud-header">
+    <div class="container nav-wrapper">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-bracket">[</span>MENTAL<span class="logo-accent">DEFEUR</span><span class="logo-bracket">]</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="hud-nav" id="hudNav">
+        <a href="#about" class="nav-link"><span class="nav-num">01.</span> Profil</a>
+        <a href="#skills" class="nav-link"><span class="nav-num">02.</span> Compétences</a>
+        <a href="#gallery" class="nav-link"><span class="nav-num">03.</span> Galerie Art</a>
+        <a href="#platforms" class="nav-link"><span class="nav-num">04.</span> Projets & Hubs</a>
+        <a href="#experience" class="nav-link"><span class="nav-num">05.</span> Parcours</a>
+        <a href="#contact" class="nav-link btn-nav">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>PLAYER_01 // DEV &bull; GODOT ENGINE &bull; GAME ART &bull; MAO</span>
+          </div>
+          <h1 class="hero-title">
+            JOFFREY <span class="text-gradient">TERRINE</span>
+          </h1>
+          <p class="hero-subtitle">
+            Développeur Informatique (BTS SIO SLAM) &bull; Créateur de Jeu Vidéo (Godot Engine) &bull; Illustrateur & MAO
+          </p>
+          <p class="hero-desc">
+            Du développement logiciel & web (<strong>GitHub</strong>) à la création d'un projet de jeu vidéo sur <strong>Godot Engine</strong>, en passant par l’illustration gaming/manga (<strong>DeviantArt</strong>) et la production musicale (<strong>SoundCloud</strong>). Un profil complet qui réunit code, visuel et son.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#platforms" class="btn btn-primary">
+              <span>Découvrir mes projets & hubs</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="assets/CV_Joffrey_TERRINE.pdf" target="_blank" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              <span>Télécharger mon CV</span>
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta-item">
+              <span class="meta-label">MOTEUR DE JEU</span>
+              <span class="meta-val">Godot Engine (Projet Indie)</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">CODE & OPEN SOURCE</span>
+              <span class="meta-val"><a href="https://github.com/MentalDeFeur" target="_blank" rel="noopener">github.com/MentalDeFeur</a></span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">GALERIE ART</span>
+              <span class="meta-val"><a href="https://www.deviantart.com/mentaldefeur" target="_blank" rel="noopener">deviantart.com/mentaldefeur</a></span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">AUDIO & MAO</span>
+              <span class="meta-val"><a href="https://soundcloud.com/mentaldefeur" target="_blank" rel="noopener">soundcloud.com/mentaldefeur</a></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Character / HUD Card -->
+        <div class="hero-card-wrapper">
+          <div class="hud-card profile-card">
+            <div class="card-corner tl"></div>
+            <div class="card-corner tr"></div>
+            <div class="card-corner bl"></div>
+            <div class="card-corner br"></div>
+
+            <div class="card-header">
+              <span class="card-tag">CHARACTER SHEET // @MENTALDEFEUR</span>
+              <span class="card-lvl">LVL. BTS SIO SLAM</span>
+            </div>
+
+            <div class="card-preview">
+              <img src="assets/img/trio_gaming_sketches.jpg" alt="Croquis Gaming Mario, Sonic et Pikachu par Joffrey Terrine" />
+              <div class="preview-overlay">
+                <span>ESQUISSES ORIGINALES // GAMING ART</span>
+              </div>
+            </div>
+
+            <div class="stat-bars">
+              <div class="stat-row">
+                <div class="stat-info"><span>DEV LOGICIEL & GODOT ENGINE</span><span>86%</span></div>
+                <div class="bar-track"><div class="bar-fill cyan" style="width: 86%"></div></div>
+              </div>
+              <div class="stat-row">
+                <div class="stat-info"><span>SYSTÈMES & LINUX / WINDOWS</span><span>90%</span></div>
+                <div class="bar-track"><div class="bar-fill purple" style="width: 90%"></div></div>
+              </div>
+              <div class="stat-row">
+                <div class="stat-info"><span>GAME ART & DESSIN (DEVIANTART)</span><span>88%</span></div>
+                <div class="bar-track"><div class="bar-fill magenta" style="width: 88%"></div></div>
+              </div>
+              <div class="stat-row">
+                <div class="stat-info"><span>AUDIO & MAO (SOUNDCLOUD)</span><span>80%</span></div>
+                <div class="bar-track"><div class="bar-fill green" style="width: 80%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">01 // PROFIL</span>
+          <h2 class="section-title">De la Programmation à la Création de Jeu Vidéo</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="hud-panel">
+            <h3>Développement Logiciel, Web & Godot Engine</h3>
+            <p>
+              Diplômé d’un <strong>BTS SIO option SLAM</strong> (Solutions Logicielles et Applications Métiers), je maîtrise la conception d’applications web (PHP, SQL, MySQL, architecture MVC, POO) ainsi que le diagnostic et la maintenance sur environnements <strong>GNU/Linux</strong> et <strong>Windows</strong>.
+            </p>
+            <p>
+              Je travaille actuellement sur un <strong>projet de jeu vidéo indépendant sous Godot Engine</strong>, où j'applique la programmation orientée objet, la logique de gameplay, la gestion des scènes et le versionnement via <strong>GitHub</strong>.
+            </p>
+          </div>
+
+          <div class="hud-panel">
+            <h3>Game Art, Illustration & Sound Design</h3>
+            <p>
+              Parce qu'un jeu vidéo repose sur l'alliance du code, de l'image et du son, je développe en parallèle mes univers visuels sur <strong>DeviantArt</strong> (dessin traditionnel au crayon et numérique autour du gaming et du manga) et mes ambiances sonores sur <strong>SoundCloud</strong> via la <strong>MAO</strong>.
+            </p>
+            <p>
+              Cette synergie me permet d'intervenir aussi bien sur les aspects techniques (scripting, architecture, optimisation) que sur la direction artistique et sonore d'un projet interactif.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">02 // ARBRE DE COMPÉTENCES</span>
+          <h2 class="section-title">Arsenal Technique, Game Dev & Créatif</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon cyan">&lt;/&gt;</div>
+            <h3>Développement & Game Dev</h3>
+            <div class="tag-cloud">
+              <span class="tag tag-highlight">Godot Engine</span>
+              <span class="tag">GDScript / POO</span>
+              <span class="tag">HTML5 / CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">PHP</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Architecture MVC</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon purple">DB</div>
+            <h3>Bases de Données & Conception</h3>
+            <div class="tag-cloud">
+              <span class="tag">MySQL</span>
+              <span class="tag">phpMyAdmin</span>
+              <span class="tag">Merise / JMerise</span>
+              <span class="tag">MCD / MLD</span>
+              <span class="tag">UML</span>
+              <span class="tag">Game Design & Cahier des charges</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon green">SYS</div>
+            <h3>Systèmes & Support</h3>
+            <div class="tag-cloud">
+              <span class="tag">GNU/Linux (Debian/Ubuntu)</span>
+              <span class="tag">Windows 10/11</span>
+              <span class="tag">Helpdesk N1/N2</span>
+              <span class="tag">Diagnostic Hardware</span>
+              <span class="tag">WAMP / Apache</span>
+              <a href="https://github.com/MentalDeFeur" target="_blank" rel="noopener" class="tag tag-link">Git / GitHub ↗</a>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon magenta">ART</div>
+            <h3>Game Art, Audio & IA</h3>
+            <div class="tag-cloud">
+              <a href="https://www.deviantart.com/mentaldefeur" target="_blank" rel="noopener" class="tag tag-link">DeviantArt (Illustrations) ↗</a>
+              <span class="tag">Dessin Traditionnel & Numérique</span>
+              <span class="tag">GIMP</span>
+              <a href="https://soundcloud.com/mentaldefeur" target="_blank" rel="noopener" class="tag tag-link">SoundCloud (MAO) ↗</a>
+              <span class="tag">Prompt Engineering</span>
+              <span class="tag">VS Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">03 // SHOWCASE ARTWORK</span>
+          <h2 class="section-title">Galerie Gaming & Illustrations</h2>
+          <p class="section-subtitle">
+            Sélection de mes dessins réalisés au crayon papier et mis en couleur, rendant hommage aux mascottes du jeu vidéo et de l'animation. Retrouvez l'ensemble de mes publications sur <a href="https://www.deviantart.com/mentaldefeur" target="_blank" rel="noopener" class="inline-link">DeviantArt (@mentaldefeur)</a>.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-bar" role="tablist">
+          <button class="filter-btn active" data-filter="all">Toutes les œuvres (5)</button>
+          <button class="filter-btn" data-filter="gaming">Icônes Gaming</button>
+          <button class="filter-btn" data-filter="collection">Collections & Croquis</button>
+          <a href="https://www.deviantart.com/mentaldefeur" target="_blank" rel="noopener" class="filter-btn filter-ext">Voir plus sur DeviantArt ↗</a>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Item 1: Mario -->
+          <article class="art-card" data-category="gaming" data-title="Super Mario — Portrait Crayon" data-desc="Étude au crayon graphite du célèbre plombier de Nintendo. Travail sur les volumes, les ombrages de la moustache et les proportions expressives." data-img="assets/img/mario_sketch.jpg">
+            <div class="art-thumb">
+              <img src="assets/img/mario_sketch.jpg" alt="Dessin au crayon de Super Mario" loading="lazy" />
+              <div class="art-badge">NINTENDO // CRAYON</div>
+            </div>
+            <div class="art-info">
+              <h3>Super Mario — Portrait</h3>
+              <p>Crayon graphite sur papier A4 &bull; Étude d'expression et d'ombrage.</p>
+            </div>
+          </article>
+
+          <!-- Item 2: Sonic -->
+          <article class="art-card" data-category="gaming" data-title="Sonic the Hedgehog — Pose Classique" data-desc="Reproduction fidèle du hérisson bleu emblématique de SEGA dans sa posture classique, avec travail sur le dynamisme des piquants et l'ombre portée." data-img="assets/img/sonic_sketch.jpg">
+            <div class="art-thumb">
+              <img src="assets/img/sonic_sketch.jpg" alt="Dessin au crayon de Sonic the Hedgehog" loading="lazy" />
+              <div class="art-badge">SEGA // CRAYON</div>
+            </div>
+            <div class="art-info">
+              <h3>Sonic the Hedgehog</h3>
+              <p>Crayon graphite sur papier &bull; Pose rétro emblématique.</p>
+            </div>
+          </article>
+
+          <!-- Item 3: Pikachu -->
+          <article class="art-card" data-category="gaming" data-title="Pikachu — Esquisse Dynamique" data-desc="Illustration de Pikachu en mouvement, mettant en avant la fluidité du trait et les contrastes au crayon." data-img="assets/img/pikachu_sketch.jpg">
+            <div class="art-thumb">
+              <img src="assets/img/pikachu_sketch.jpg" alt="Dessin au crayon de Pikachu" loading="lazy" />
+              <div class="art-badge">POKÉMON // CRAYON</div>
+            </div>
+            <div class="art-info">
+              <h3>Pikachu</h3>
+              <p>Crayon graphite sur papier &bull; Lignes claires et expression joyeuse.</p>
+            </div>
+          </article>
+
+          <!-- Item 4: Trio Gaming -->
+          <article class="art-card" data-category="collection" data-title="Trio Légendaire — Mario, Sonic & Pikachu" data-desc="Réunion sur table de travail des trois grandes icônes du jeu vidéo : Nintendo, SEGA et Pokémon." data-img="assets/img/trio_gaming_sketches.jpg">
+            <div class="art-thumb">
+              <img src="assets/img/trio_gaming_sketches.jpg" alt="Vue d'ensemble des trois dessins Mario, Sonic et Pikachu" loading="lazy" />
+              <div class="art-badge">TRIO // WORKSPACE</div>
+            </div>
+            <div class="art-info">
+              <h3>Trio Légendaire du Gaming</h3>
+              <p>Série complète des trois mascottes réunies après encrage et ombrage.</p>
+            </div>
+          </article>
+
+          <!-- Item 5: Full Art Collection -->
+          <article class="art-card" data-category="collection" data-title="Collection Complète — Gaming, Manga & Réalisme" data-desc="Panorama de 20 œuvres variées : versions colorisées de Mario, Sonic et Pikachu, personnages d'anime (Luffy, Ichigo), portraits réalistes, études anatomiques, paysages et véhicules." data-img="assets/img/art_collection_full.jpg">
+            <div class="art-thumb">
+              <img src="assets/img/art_collection_full.jpg" alt="Panorama de 20 dessins variés : gaming, manga, portraits et paysages" loading="lazy" />
+              <div class="art-badge">COLLECTION // 20 ŒUVRES</div>
+            </div>
+            <div class="art-info">
+              <h3>Collection Complète (Gaming, Manga & Études)</h3>
+              <p>20 planches : Mario, Sonic & Pikachu en couleur, Luffy, Ichigo, portraits & paysages.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREATIVE & DEV PLATFORMS SECTION -->
+    <section id="platforms" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">04 // PROJET EN COURS & ÉCOSYSTÈME</span>
+          <h2 class="section-title">Développement Godot Engine & Hubs (@MentalDeFeur)</h2>
+          <p class="section-subtitle">
+            Découvrez mon projet de jeu vidéo en cours de création sur Godot Engine ainsi que mes espaces dédiés au code, au dessin et à la musique.
+          </p>
+        </div>
+
+        <!-- Featured Godot Project Banner -->
+        <div class="featured-project-card">
+          <div class="fp-header">
+            <span class="fp-badge"><span class="status-dot"></span> WORK IN PROGRESS // GAME DEV</span>
+            <span class="fp-engine">MOTEUR : GODOT ENGINE</span>
+          </div>
+          <div class="fp-body">
+            <div class="fp-info">
+              <h3>Projet de Jeu Vidéo Indépendant — Godot Engine</h3>
+              <p>
+                Conception et développement actif d'un jeu vidéo sous le moteur open-source <strong>Godot Engine</strong>. Ce projet me permet de réunir l'ensemble de mes compétences : programmation de mécaniques de jeu, structuration des scènes et nœuds, intégration graphique et création d'ambiances sonores originales.
+              </p>
+              <div class="fp-tags">
+                <span class="tag">Godot Engine</span>
+                <span class="tag">GDScript</span>
+                <span class="tag">Architecture Scènes & Nœuds</span>
+                <span class="tag">Game Design</span>
+                <span class="tag">Intégration Art & Audio</span>
+              </div>
+            </div>
+            <div class="fp-action">
+              <a href="https://github.com/MentalDeFeur" target="_blank" rel="noopener" class="btn btn-primary">
+                <span>Suivre sur GitHub</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="platforms-grid">
+          <!-- GitHub Card -->
+          <a href="https://github.com/MentalDeFeur" target="_blank" rel="noopener" class="platform-card card-cyan">
+            <div class="platform-top">
+              <span class="platform-tag">CODE & DEV</span>
+              <span class="platform-arrow">↗</span>
+            </div>
+            <h3>GitHub</h3>
+            <p class="platform-handle">github.com/MentalDeFeur</p>
+            <p class="platform-desc">
+              Dépôts de projets personnels, scripts système GNU/Linux, développement web (PHP, JS, HTML/CSS) et expérimentations open-source.
+            </p>
+            <span class="platform-cta">Consulter les dépôts</span>
+          </a>
+
+          <!-- DeviantArt Card -->
+          <a href="https://www.deviantart.com/mentaldefeur" target="_blank" rel="noopener" class="platform-card card-magenta">
+            <div class="platform-top">
+              <span class="platform-tag">GAME ART & MANGA</span>
+              <span class="platform-arrow">↗</span>
+            </div>
+            <h3>DeviantArt</h3>
+            <p class="platform-handle">deviantart.com/mentaldefeur</p>
+            <p class="platform-desc">
+              Galerie artistique regroupant mes dessins au crayon, croquis numériques, fan-arts gaming (Mario, Sonic, Pokémon) et illustrations manga.
+            </p>
+            <span class="platform-cta">Visiter la galerie DeviantArt</span>
+          </a>
+
+          <!-- SoundCloud Card -->
+          <a href="https://soundcloud.com/mentaldefeur" target="_blank" rel="noopener" class="platform-card card-purple">
+            <div class="platform-top">
+              <span class="platform-tag">MAO & SOUND DESIGN</span>
+              <span class="platform-arrow">↗</span>
+            </div>
+            <h3>SoundCloud</h3>
+            <p class="platform-handle">soundcloud.com/mentaldefeur</p>
+            <p class="platform-desc">
+              Compositions musicales, instrumentales et créations audio réalisées en MAO (Musique Assistée par Ordinateur).
+            </p>
+            <span class="platform-cta">Écouter les pistes audio</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION SECTION -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">05 // QUEST LOG</span>
+          <h2 class="section-title">Expériences & Formations</h2>
+        </div>
+
+        <div class="timeline-grid">
+          <!-- Column 1: Experiences -->
+          <div class="timeline-col">
+            <h3 class="col-heading">Expériences & Projets</h3>
+
+            <div class="timeline-item">
+              <span class="time-badge">En cours</span>
+              <h4>Développeur Jeu Vidéo Indépendant (Godot Engine)</h4>
+              <p class="org">Projet Personnel &bull; Game Dev, Art & Audio</p>
+              <ul>
+                <li>Développement d'un jeu vidéo sur le moteur <strong>Godot Engine</strong> (prototypage gameplay, scripting, gestion des collisions et interfaces).</li>
+                <li>Création des ressources graphiques et musicales en lien avec mes productions <strong>DeviantArt</strong> et <strong>SoundCloud</strong>.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <span class="time-badge">2021 – 2025</span>
+              <h4>Immersions Professionnelles (DuoDay)</h4>
+              <p class="org">Safran Aircraft Engines &bull; ITS Group S.A. &bull; Safran Massy</p>
+              <ul>
+                <li><strong>Safran Aircraft Engines (Nov. 2025) :</strong> Découverte du contrôle qualité par Réalité Virtuelle (VR) et traçabilité numérique industrielle.</li>
+                <li><strong>ITS Group S.A. (Nov. 2022) :</strong> Immersion en ESN (méthodologies agiles, cycles de développement et revues de code).</li>
+                <li><strong>Safran Massy (Nov. 2021) :</strong> Architecture des systèmes embarqués critiques aéronautiques.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <span class="time-badge">Janv. – Févr. 2019</span>
+              <h4>Développeur Informatique (Stage)</h4>
+              <p class="org">Lycée Joseph Gaillard (Fort-de-France)</p>
+              <ul>
+                <li>Rédaction du cahier des charges fonctionnel et modélisation UML.</li>
+                <li>Conception de base de données (MCD/MLD sous JMerise) et implémentation MySQL/phpMyAdmin.</li>
+                <li>Développement d’un site web dynamique sur serveur local WAMP (Apache, MySQL, PHP).</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <span class="time-badge">Mai – Juin 2017</span>
+              <h4>Webmaster & Intégrateur Web (Stage)</h4>
+              <p class="org">Fit' Gym (Martinique)</p>
+              <ul>
+                <li>Refonte complète de l’architecture du site web et amélioration de l’ergonomie.</li>
+                <li>Retouche et optimisation des visuels et bannières avec GIMP.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Column 2: Education -->
+          <div class="timeline-col">
+            <h3 class="col-heading">Diplômes & Certifications</h3>
+
+            <div class="timeline-item">
+              <span class="time-badge">Sept. – Déc. 2025</span>
+              <h4>Dispositif Illiade</h4>
+              <p class="org">EPNAK, Soisy-sur-Seine</p>
+              <p>Consolidation du projet professionnel en informatique et validation des compétences clés.</p>
+            </div>
+
+            <div class="timeline-item">
+              <span class="time-badge">2016 – 2019</span>
+              <h4>BTS SIO — Option SLAM</h4>
+              <p class="org">Lycée Joseph Gaillard (Martinique)</p>
+              <p>Solutions Logicielles et Applications Métiers : développement d'applications, bases de données relationnelles et architectures logicielles.</p>
+            </div>
+
+            <div class="timeline-item">
+              <span class="time-badge">2015 – 2016</span>
+              <h4>Baccalauréat STMG — Spécialité SIG</h4>
+              <p class="org">Lycée Joseph Gaillard &bull; Mention Bien</p>
+              <p>Systèmes d'Information de Gestion, bases de données et économie numérique.</p>
+            </div>
+
+            <div class="hud-mini-box">
+              <h4>Langues & Atouts</h4>
+              <p><strong>Français & Créole :</strong> Langues maternelles</p>
+              <p><strong>Anglais :</strong> Niveau B2 (Technique & Professionnel)</p>
+              <p><strong>Passions :</strong> Godot Engine, Open Source, Veille Hardware, Dessin Numérique, MAO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-box">
+          <span class="section-kicker">06 // MULTIPLAYER & CO-OP</span>
+          <h2>Prêt à collaborer sur un projet ?</h2>
+          <p>
+            Disponible en <strong>Île-de-France</strong> et en <strong>télétravail</strong> pour des opportunités en développement web/logiciel, jeu vidéo (Godot Engine), support systèmes ou projets créatifs.
+          </p>
+
+          <div class="contact-cards">
+            <a href="mailto:jterr@laposte.net" class="contact-item">
+              <span class="c-label">EMAIL</span>
+              <span class="c-value">jterr@laposte.net</span>
+            </a>
+            <a href="tel:+33781905413" class="contact-item">
+              <span class="c-label">TÉLÉPHONE</span>
+              <span class="c-value">07 81 90 54 13</span>
+            </a>
+            <a href="https://github.com/MentalDeFeur" target="_blank" rel="noopener" class="contact-item">
+              <span class="c-label">GITHUB // CODE & GODOT</span>
+              <span class="c-value">github.com/MentalDeFeur</span>
+            </a>
+            <a href="https://www.deviantart.com/mentaldefeur" target="_blank" rel="noopener" class="contact-item">
+              <span class="c-label">DEVIANTART // ART</span>
+              <span class="c-value">deviantart.com/mentaldefeur</span>
+            </a>
+            <a href="https://soundcloud.com/mentaldefeur" target="_blank" rel="noopener" class="contact-item">
+              <span class="c-label">SOUNDCLOUD // MAO</span>
+              <span class="c-value">soundcloud.com/mentaldefeur</span>
+            </a>
+            <a href="https://linktr.ee/MentalDeFeur" target="_blank" rel="noopener" class="contact-item">
+              <span class="c-label">HUB // LINKTREE</span>
+              <span class="c-value">linktr.ee/MentalDeFeur</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="hud-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Joffrey TERRINE (MentalDeFeur). Tous droits réservés.</p>
+      <p class="footer-sub">Godot Engine &bull; Code (GitHub) &bull; Game Art (DeviantArt) &bull; Audio (SoundCloud)</p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Fermer l'aperçu">&times;</button>
+      <div class="lightbox-img-wrap">
+        <img id="lightboxImg" src="" alt="" />
+      </div>
+      <div class="lightbox-caption">
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
